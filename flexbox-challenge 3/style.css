@@ -27,6 +27,10 @@ h1 {
     margin-top: 0;
 }
 
+.logo{
+    margin-right: 1em;
+}
+
 .section-title {
     color: #87629A;
 }
@@ -75,7 +79,13 @@ header {
 
 .nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.nav__list:first-child{
+    margin: 0 auto;
 }
 
 .nav__list {
@@ -142,4 +152,21 @@ header {
     text-align: center;
     color: #fff;
     background-color: #136c72;
+}
+
+@media (max-width:750px){
+    .row{
+        display: block;
+    }
+    
+    .hero__text,
+    .hero__img,
+    .primary-content,
+    .sidebar{
+        width:100%;
+    }
+
+    .hero__img{
+        margin-top: 2em;
+    }
 }
